@@ -44,6 +44,8 @@ function fetchPokemon() {
           "</div>";
       }
       if (info == true) {
+        info_button.style.backgroundColor = "lightGreen";
+        moves_button.style.backgroundColor = "whitesmoke";
         height = resp.height;
         weight = resp.weight;
         hp = resp.stats[0]["base_stat"];
@@ -71,6 +73,8 @@ function fetchPokemon() {
           speed +
           "</div>";
       } else {
+        info_button.style.backgroundColor = "whitesmoke";
+        moves_button.style.backgroundColor = "lightGreen";
         info_box.innerHTML = "";
         for (let j = 0; j < moves.length; j++) {
           info_box.innerHTML += "<div class='info_text'>" + moves[j] + "</div>";
@@ -99,6 +103,8 @@ leftButton.addEventListener("click", () => {
 info_button.addEventListener("click", () => {
   if (info == false) {
     info = true;
+    info_button.style.backgroundColor = "lightGreen";
+    moves_button.style.backgroundColor = "whitesmoke";
     info_box.innerHTML =
       "<div class='info_text'> height: " +
       height +
@@ -122,6 +128,8 @@ info_button.addEventListener("click", () => {
 
 moves_button.addEventListener("click", () => {
   if (info == true) {
+    info_button.style.backgroundColor = "whitesmoke";
+    moves_button.style.backgroundColor = "lightGreen";
     info = false;
     info_box.innerHTML = "";
     for (let j = 0; j < moves.length; j++) {
