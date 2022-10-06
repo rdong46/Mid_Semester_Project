@@ -127,6 +127,7 @@ img {
   width: 225px;
   background-color: whitesmoke;
   padding-top: 15px;
+  overflow-y: auto;
 }
 
 .info_text {
@@ -208,5 +209,5 @@ img {
 }
 
 .fighting {
-  background-color: #C22E28
+  background-color: #c22e28;
 }
