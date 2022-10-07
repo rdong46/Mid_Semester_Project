@@ -126,6 +126,7 @@ img {
   width: 225px;
   background-color: whitesmoke;
   padding-top: 15px;
+  padding-bottom: 15px;
   overflow-y: auto;
 }
 

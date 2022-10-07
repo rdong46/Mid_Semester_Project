@@ -46,8 +46,8 @@ function fetchPokemon() {
       if (info == true) {
         info_button.style.backgroundColor = "lightGreen";
         moves_button.style.backgroundColor = "whitesmoke";
-        height = resp.height;
-        weight = resp.weight;
+        height = resp.height / 10;
+        weight = resp.weight / 10;
         hp = resp.stats[0]["base_stat"];
         attack = resp.stats[1]["base_stat"];
         defense = resp.stats[2]["base_stat"];
@@ -82,6 +82,7 @@ function fetchPokemon() {
       }
     });
 }
+
 fetchPokemon();
 
 rightButton.addEventListener("click", () => {
