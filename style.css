@@ -1,7 +1,12 @@
+html {
+  height: 100%;
+}
+
 body {
   display: flex;
-  flex-direction: center;
   justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 #page {
@@ -9,7 +14,8 @@ body {
   flex-direction: column;
   height: 600px;
   width: 600px;
-  justify-self: center;
+  justify-content: center;
+  height: 100%;
 }
 
 #title {
