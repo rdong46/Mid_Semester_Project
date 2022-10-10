@@ -24,6 +24,10 @@ body {
   font-weight: bold;
 }
 
+#heading {
+  margin-bottom: 15px;
+}
+
 #column {
   display: flex;
   justify-content: space-around;
@@ -128,7 +132,7 @@ img {
 }
 
 #info_box {
-  height: 300px;
+  height: 250px;
   width: 225px;
   background-color: whitesmoke;
   padding-top: 15px;
